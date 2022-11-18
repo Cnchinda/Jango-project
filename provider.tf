@@ -4,7 +4,7 @@
   #  profile = ""
 
 provider "aws" {
-  region     = "us-west-2"
+  region     = "us-east-1"
   access_key = "AKIARTP7QI2XL6TSWJR2"
   secret_key = "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"
 }
