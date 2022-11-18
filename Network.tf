@@ -8,6 +8,9 @@ resource "aws_vpc" "Jango-vpc" {
     }
 } 
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
 # creating 3 private subnet uding on resource block. this will laverage the idea of meta-arguments like count,for each and depends On
 
 resource "aws_subnet" "Jango_private_subnets" {
