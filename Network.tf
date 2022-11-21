@@ -1,13 +1,4 @@
 
-terraform {
-    required_providers {
-      aws = {
-        source = "hashicorp/aws"
-        version = "~> 4.0"
-      }
-    }
-}
-
 resource "aws_vpc" "Jango-vpc" {
     cidr_block = var.cidr_block
     instance_tenancy = "default"
